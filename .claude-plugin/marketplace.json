@@ -1,0 +1,20 @@
+{
+  "name": "xmake-skills",
+  "owner": {
+    "name": "ruki",
+    "email": "waruqi@gmail.com"
+  },
+  "metadata": {
+    "description": "Agent Skills for Xmake — teach AI assistants how to use the Xmake build system effectively",
+    "homepage": "https://github.com/xmake-io/xmake-skills"
+  },
+  "plugins": [
+    {
+      "name": "xmake-skills",
+      "source": "./",
+      "description": "53 focused Agent Skills covering all of Xmake — from basic project setup and target configuration to cross-compilation, package management, C++20 modules, 13 non-C/C++ languages, build optimization, distributed compilation, and troubleshooting.",
+      "category": "build-tools",
+      "tags": ["xmake", "c", "c++", "build-system", "lua", "package-manager", "cross-compilation", "toolchain"]
+    }
+  ]
+}

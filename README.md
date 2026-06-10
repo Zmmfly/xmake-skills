@@ -26,13 +26,33 @@ Each skill packages up focused Xmake know-how — from writing `xmake.lua` to in
 
 See [`skills/`](./skills/) for the full list and layout.
 
+> **Context cost:** The 53 skill trigger descriptions (frontmatter `description` fields) consume about 4k tokens in total. These are always loaded so the agent knows which skills are available. The full skill body is only loaded on demand when the task matches the description — so you get comprehensive Xmake coverage without wasting context.
+
 ## Why
 
 Large language models often know *about* Xmake but get the details wrong: outdated APIs, wrong option names, broken package syntax. Skills fix this by loading just the right documentation and examples into the agent's context when it is actually working on Xmake.
 
 ## Usage
 
-Clone this repository into your agent's skills directory, or point your agent at it directly. Refer to your agent platform's documentation for how to install and enable skills.
+### Claude Code (recommended)
+
+**Install from GitHub:**
+
+```bash
+claude plugins install xmake-io/xmake-skills
+```
+
+**Or add as a marketplace first, then install:**
+
+```bash
+# In Claude Code interactive session:
+/plugin marketplace add xmake-io/xmake-skills
+/plugin install xmake-skills
+```
+
+### Manual installation
+
+Clone this repository and point your agent at it directly. Refer to your agent platform's documentation for how to install and enable skills.
 
 ```bash
 git clone https://github.com/xmake-io/xmake-skills.git

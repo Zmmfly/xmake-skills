@@ -15,5 +15,6 @@ tags
 # Node
 node_modules/
 
-# ai
+# ai (but not .claude-plugin)
 .claude
+!.claude-plugin/

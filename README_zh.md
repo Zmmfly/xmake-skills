@@ -26,11 +26,31 @@
 
 完整的 Skill 列表和目录结构见 [`skills/`](./skills/)。
 
+> **上下文开销：** 全部 53 个 skill 的触发描述（frontmatter 的 `description` 字段）合计约 4k tokens。这些描述始终加载，以便 Agent 知道有哪些 skill 可用。完整的 skill 内容仅在任务匹配描述时按需加载 —— 因此你能获得全面的 Xmake 覆盖而不会浪费上下文。
+
 ## 背景
 
 大语言模型通常"知道" Xmake，但经常在细节上出错：API 过时、选项名称错误、包语法不正确。Skills 通过在 Agent 真正处理 Xmake 相关任务时，按需加载合适的文档和示例进入上下文，来解决这一问题。
 
 ## 使用
+
+### Claude Code（推荐）
+
+**从 GitHub 直接安装：**
+
+```bash
+claude plugins install xmake-io/xmake-skills
+```
+
+**或者先添加 marketplace，再安装：**
+
+```bash
+# 在 Claude Code 交互会话中执行：
+/plugin marketplace add xmake-io/xmake-skills
+/plugin install xmake-skills
+```
+
+### 手动安装
 
 将本仓库克隆到你的 Agent 的 Skills 目录中，或者直接在 Agent 中指向本仓库。具体安装和启用 Skills 的方法，请参考对应 Agent 平台的文档。
 

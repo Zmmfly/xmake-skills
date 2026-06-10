@@ -1,0 +1,26 @@
+{
+  "name": "xmake-skills",
+  "version": "1.0.0",
+  "description": "Agent Skills for Xmake — teach AI assistants how to use the Xmake build system effectively across 50+ focused skill topics covering basics, targets, packages, toolchains, languages, scripting, performance, and more.",
+  "author": {
+    "name": "xmake-io",
+    "url": "https://xmake.io"
+  },
+  "homepage": "https://xmake.io",
+  "repository": "https://github.com/xmake-io/xmake-skills",
+  "license": "Apache-2.0",
+  "keywords": ["xmake", "c", "c++", "build-system", "lua", "package-manager", "cross-compilation"],
+  "skills": [
+    "./skills/basics",
+    "./skills/cli",
+    "./skills/project-config",
+    "./skills/toolchains",
+    "./skills/packages",
+    "./skills/packaging",
+    "./skills/testing",
+    "./skills/performance",
+    "./skills/scripting",
+    "./skills/ops",
+    "./skills/languages"
+  ]
+}
